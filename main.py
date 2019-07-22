@@ -19,7 +19,7 @@ row_data = [1, '第1列数据', '第2列数据']  # data of a row
 with open(csv_path, "w", encoding='utf8', newline='') as csvfile:
     writer = csv.writer(csvfile)
     #writer.writerow(header_data)
-    #writer.writerow(row_data)
+    writer.writerow(row_data)
     for i in range(10):
         #writer.writerow(row_data)
         writer.writerow(header_data)
